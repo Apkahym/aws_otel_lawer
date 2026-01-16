@@ -3,6 +3,7 @@
 [![CI/CD Pipeline](https://github.com/Apkahym/aws_otel_lawer/actions/workflows/ci.yaml/badge.svg)](https://github.com/Apkahym/aws_otel_lawer/actions/workflows/ci.yaml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/Apkahym/aws_otel_lawer)](https://goreportcard.com/report/github.com/Apkahym/aws_otel_lawer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Release](https://img.shields.io/github/v/release/Apkahym/aws_otel_lawer)](https://github.com/Apkahym/aws_otel_lawer/releases/latest)
 
 Una **AWS Lambda Layer** completa escrita en **Go** que provee instrumentación **OpenTelemetry** con modelo **fail-open, no bloqueante y opt-in**.
 
