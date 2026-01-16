@@ -116,6 +116,7 @@ func NewPassthroughHandler(handler string) *PassthroughHandler {
 // Invoke ejecuta el handler sin instrumentación
 func (h *PassthroughHandler) Invoke(ctx context.Context, payload json.RawMessage) (json.RawMessage, error) {
 	// Implementación simplificada
+	// #nosec G204 -- originalHandler is from trusted environment variable ORIGINAL_HANDLER
 	cmd := exec.CommandContext(ctx, h.originalHandler)
 	output, err := cmd.Output()
 	if err != nil {

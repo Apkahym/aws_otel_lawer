@@ -37,8 +37,8 @@ func main() {
 		defer func() {
 			shutdownCtx, cancel := context.WithTimeout(context.Background(), 2*1e9) // 2 segundos
 			defer cancel()
-			if err := shutdown(shutdownCtx); err != nil {
-				fmt.Fprintf(os.Stderr, "WARN: OTEL shutdown failed: %v\n", err)
+			if shutdownErr := shutdown(shutdownCtx); shutdownErr != nil {
+				fmt.Fprintf(os.Stderr, "WARN: OTEL shutdown failed: %v\n", shutdownErr)
 			}
 		}()
 	}
