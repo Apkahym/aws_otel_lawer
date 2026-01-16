@@ -1,0 +1,36 @@
+# Binaries
+dist/
+layer/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test coverage
+*.out
+coverage.txt
+
+# Go workspace
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Artifacts
+*.zip
+*.tar.gz
+
+# Logs
+*.log
+
+# Env files
+.env
+.env.local
